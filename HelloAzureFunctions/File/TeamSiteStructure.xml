@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema">
+  <pnp:Preferences Generator="PnP.Framework, Version=1.18.0.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-11796AF9FF0A484A9466502130C66AE5">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-11796AF9FF0A484A9466502130C66AE5" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:WebSettings NoCrawl="false" WelcomePage="SitePages/DepartmentHome.aspx" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" SearchScope="DefaultScope" SearchBoxInNavBar="Inherit" />
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="{parameter:branchName}" ThumbnailUrl="" PageName="{parameter:branchName}.aspx">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" ControlId="c533c7ad-e583-445c-b9e3-c03bf5109d34" Order="2" Column="1"
+                    JsonControlData="{
+                        &quot;id&quot;: &quot;c533c7ad-e583-445c-b9e3-c03bf5109d34&quot;,
+                        &quot;instanceId&quot;: &quot;8a8f8f3a-1e4c-4f7d-9e1e-b1d3b6a9145e&quot;,
+                        &quot;title&quot;: &quot;Service Desk&quot;,
+                        &quot;description&quot;: &quot;Web part description&quot;,
+                        &quot;dataVersion&quot;: &quot;1.0&quot;,
+                        &quot;properties&quot;: {
+                        &quot;description&quot;: &quot;{parameter:branchId}&quot;
+                        }
+                    }" />
+                </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema">
+  <pnp:Preferences Generator="PnP.Framework, Version=1.18.0.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-7FB2B9D9BC0C4D46B3C71CF6659B5550">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-7FB2B9D9BC0C4D46B3C71CF6659B5550" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="{parameter:branchName}" ThumbnailUrl="" PageName="{parameter:branchName}.aspx">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" ControlId="c533c7ad-e583-445c-b9e3-c03bf5109d34" Order="2" Column="1"
+                    JsonControlData="{
+                        &quot;id&quot;: &quot;c533c7ad-e583-445c-b9e3-c03bf5109d34&quot;,
+                        &quot;instanceId&quot;: &quot;{parameter:InstanceId}&quot;,
+                        &quot;title&quot;: &quot;Service Desk&quot;,
+                        &quot;description&quot;: &quot;Web part description&quot;,
+                        &quot;dataVersion&quot;: &quot;1.0&quot;,
+                        &quot;properties&quot;: {
+                        &quot;description&quot;: &quot;{parameter:branchId}&quot;
+                        }
+                    }" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning> -->
